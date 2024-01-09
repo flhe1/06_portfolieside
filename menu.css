@@ -1,0 +1,117 @@
+:root {
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #ffffff;
+  color: #fff;
+}
+
+.logolink a {
+  font-size: 30px;
+  color: black;
+  text-decoration: none;
+}
+
+.logolink a:hover {
+  color: #ed64a5;
+}
+
+.logolink a.active {
+  color: #ed64a5;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  margin-left: auto;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+li {
+  margin-left: 20px;
+  font-size: 30px;
+}
+
+.navlink {
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+  text-decoration: none;
+}
+
+.navlink:hover {
+  color: #ed64a5;
+}
+
+.navlink.active {
+  color: #ed64a5;
+  text-decoration: none;
+}
+
+/*  FOOTER   */
+
+footer {
+  position: relative;
+  margin-top: 90px;
+}
+
+.footerboks {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  margin-top: 50px;
+}
+
+.footercontainer {
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 90%;
+}
+
+.instagram a,
+.tlfnummer a,
+.email a {
+  color: #ed64a5;
+}
+
+.instagram a:hover,
+.tlfnummer a:hover,
+.email a:hover {
+  color: #26ff26;
+}
+
+/* ----------- MOBIL SITE ----------- */
+
+@media only screen and (max-width: 800px) {
+  /* footer */
+  footer {
+    margin-top: 30px;
+  }
+
+  .footercontainer {
+    left: 50%;
+    transform: translateX(-50%);
+    grid-template-columns: 1fr;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .footerboks {
+    display: none;
+  }
+}

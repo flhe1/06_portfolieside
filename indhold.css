@@ -1,0 +1,149 @@
+.grafik {
+  margin-left: -25px;
+  margin-top: 120px;
+}
+
+.grafik:hover {
+  filter: invert(100%);
+}
+
+/* TEKSTBOKS 1 OG 2 */
+.tekstboks1 {
+  display: flex;
+  margin-left: 75px;
+  margin-right: 200px;
+  line-height: 2;
+  margin-bottom: 120px;
+}
+
+.afsnit1 {
+  margin-right: 90px;
+}
+
+.tekstboks2 {
+  display: flex;
+  line-height: 2;
+  margin-left: 50px;
+  margin-right: 120px;
+  margin-bottom: 150px;
+  gap: 50px;
+}
+
+a {
+  color: #ed64a5;
+}
+
+a:hover {
+  color: #26ff26;
+}
+
+/* OVERSKRIFTER */
+h1 {
+  text-align: center;
+  font-weight: lighter;
+  margin-bottom: 30px;
+}
+
+h2 {
+  text-align: center;
+  font-weight: lighter;
+}
+
+/* BOKS MED LINKS */
+
+.linkboks {
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+
+.uxuiboks {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.textcontainer {
+  position: relative;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  z-index: 2;
+  transform: translate(0, 290%);
+}
+
+.textcontainer p {
+  font-size: 16px;
+  margin: 0;
+}
+
+.interview a,
+.sitemaps a,
+.styletiles a,
+.wireframes a,
+.prototype a {
+  color: #ed64a5;
+  font-size: larger;
+}
+
+.interview a:hover,
+.sitemaps a:hover,
+.styletiles a:hover,
+.wireframes a:hover,
+.prototype a:hover {
+  color: #26ff26;
+}
+
+/* ------- MOBIL SITE ----- */
+
+@media only screen and (max-width: 800px) {
+  .grafik {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .grafik:hover {
+    filter: none;
+  }
+
+  .tekstboks1,
+  .tekstboks2 {
+    display: block;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+  }
+
+  .afsnit1,
+  .afsnit2,
+  .afsnit3,
+  .afsnit4 {
+    margin-right: 0;
+    font-size: 12px;
+  }
+
+  h1,
+  h2 {
+    font-size: 24px;
+  }
+
+  .linkboks {
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+
+  .textcontainer {
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 12px;
+    gap: 20px;
+    transform: none;
+  }
+
+  .uxuiboks {
+    display: none;
+  }
+}

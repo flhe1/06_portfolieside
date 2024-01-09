@@ -1,0 +1,92 @@
+:root {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  padding: 45px;
+  overflow: auto;
+}
+
+/* tekst */
+.tekstcontainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 70px;
+  margin-left: 65px;
+  margin-right: 310px;
+  margin-top: 35px;
+  margin-bottom: 100px;
+}
+
+.tekst1 {
+  line-height: 1.5;
+}
+
+.tekst2 {
+  line-height: 1.6;
+}
+
+.tekst2 a {
+  color: #ed64a5;
+}
+
+.tekst2 a:hover {
+  color: #26ff26;
+}
+
+/* animation banner */
+
+.banner {
+  position: relative;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 150px;
+}
+
+.bannerimg {
+  width: 100%;
+  height: auto;
+  animation: slideLeft 10s linear infinite;
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+*/ .animationbody footer {
+  position: relative;
+  margin-top: 200px;
+  z-index: 1;
+}
+
+/* --------- MOBIL SITE ------- */
+@media only screen and (max-width: 800px) {
+  .tekstcontainer {
+    display: block;
+    width: 90%;
+    margin-left: -15px;
+  }
+
+  .tekst1 p,
+  .tekst2 p {
+    font-size: 12px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+
+  .tekst2 a {
+    display: block;
+    font-size: 10px;
+    margin-top: 15px;
+  }
+
+  .footercontainer {
+    font-size: 12px;
+  }
+}

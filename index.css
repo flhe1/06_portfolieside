@@ -1,0 +1,43 @@
+.forsidemenu {
+  position: relative;
+  margin-top: 400px;
+  margin-bottom: 120px;
+  z-index: 2;
+}
+
+.forsidemenu a,
+.forsidemenu p {
+  font-size: 60px;
+  text-decoration: none;
+  color: black;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+.forsidemenu a:hover {
+  color: #ed64a5;
+}
+
+.forsidegrafik {
+  position: absolute;
+  width: 70%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+/* ------ mobil site ------ */
+@media only screen and (max-width: 800px) {
+  .forsidegrafik {
+    width: 80%;
+    height: auto;
+    margin-top: -100px;
+  }
+
+  .forsidemenu p,
+  .forsidemenu a {
+    font-size: 20px;
+    margin-top: -150px;
+  }
+}

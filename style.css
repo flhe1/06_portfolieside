@@ -1,0 +1,213 @@
+:root {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  padding: 45px;
+}
+
+/*----------------------- sidemenu -------------------------*/
+
+.sidemenu {
+  width: 195px; /* bredden af stregerne*/
+  margin: 50px auto; /* Centrerer listen */
+  float: right;
+}
+
+.sidemenu a {
+  display: block;
+  padding: 3px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.sidemenu a:hover {
+  color: #ed64a5;
+}
+
+.web.active {
+  color: #ed64a5;
+  text-decoration: none;
+}
+.uxui.active {
+  color: #ed64a5;
+  text-decoration: none;
+}
+.animation.active {
+  color: #ed64a5;
+  text-decoration: none;
+}
+.indhold.active {
+  color: #ed64a5;
+  text-decoration: none;
+}
+.portfolie.active {
+  color: #ed64a5;
+  text-decoration: none;
+}
+
+/* --------------- ommig.html ------------------*/
+
+.billederække {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  margin-left: 155px;
+  margin-right: 265px;
+  margin-top: 130px;
+}
+
+.billederække:hover {
+  filter: grayscale(100%);
+}
+
+.migfoto1 img,
+.migfoto2 img,
+.migfoto3 img {
+  width: 100%; /* Make images fill the available space */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.tekstboks {
+  margin-top: 20px;
+  margin-left: 160px;
+  margin-right: 265px;
+  line-height: 2;
+}
+
+a {
+  color: #ed64a5;
+}
+
+a:hover {
+  color: #26ff26;
+}
+
+/* -------------- GRUNDLÆGGENDE WEB ------------------ */
+
+.webgrafik {
+  margin-left: 200px;
+  margin-top: -5px;
+  z-index: 1;
+}
+
+.webgrafik:hover {
+  filter: grayscale(100%);
+}
+
+.webtekst {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+.webtekst1 {
+  grid-column: 1;
+  line-height: 1.7;
+  margin-left: 240px;
+  margin-top: -15px;
+}
+
+.webtekst2 {
+  grid-column: 2;
+  line-height: 2.1;
+  margin-right: 250px;
+}
+
+.webtekst2 a {
+  text-decoration: underline; /* tilføjer streg under */
+  color: #ed64a5;
+}
+
+.webtekst2 a:hover {
+  text-decoration: underline; /* tilføjer streg under */
+  color: #26ff26;
+}
+
+/* ------- MOBIL SITE ---------- */
+
+@media only screen and (max-width: 800px) {
+  /* ----- sidemenu -----*/
+  .sidemenu {
+    width: 150px;
+    text-align: center;
+  }
+
+  .sidemenu a {
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    font-size: 10px;
+  }
+
+  .sidemenu a:last-child {
+    border-bottom: none;
+  }
+
+  .web.active,
+  .uxui.active,
+  .animation.active,
+  .indhold.active,
+  .portfolie.active {
+    border-bottom: 1px solid #ed64a5;
+  }
+
+  .h1,
+  h2 {
+    font-size: 12px;
+  }
+
+  /* ------- MOBILSITE WEB -------- */
+
+  .webgrafik {
+    margin-left: 0;
+    margin-top: 0;
+    width: 100%; /* Make the photo take full width on mobile */
+  }
+
+  .webgrafik:hover {
+    filter: none; /* Remove grayscale effect on hover for mobile */
+  }
+
+  .webtekst {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 50px; /* Adjust the spacing for mobile */
+  }
+
+  .webtekst1 {
+    grid-column: auto; /* Set to default column placement for mobile */
+    line-height: 1.7;
+    margin-left: 0; /* Reset margin for mobile */
+    margin-top: 0; /* Reset margin for mobile */
+  }
+
+  .webtekst2 {
+    grid-column: auto; /* Set to default column placement for mobile */
+    line-height: 2.1;
+    margin-right: 0; /* Reset margin for mobile */
+  }
+
+  .webtekst2 a {
+    text-decoration: underline; /* Maintain underline for links on mobile */
+    font-size: 10px;
+    color: #ed64a5;
+  }
+
+  .webtekst2 a:hover {
+    text-decoration: underline;
+    color: #26ff26;
+  }
+}
+/*------ MOBIL SITE "OM MIG" ------*/
+
+@media only screen and (max-width: 800px) {
+  .tekstboks {
+    margin-top: 500px;
+    margin: 20px;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+}
